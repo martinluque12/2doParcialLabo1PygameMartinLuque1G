@@ -152,8 +152,6 @@ class Game:
                     sys.exit()
 
                 if event.type == pygame.KEYDOWN:
-                    if event.key == pygame.K_TAB:
-                        change_mode()
                     if event.key == pygame.K_ESCAPE:
                         self.pause_screen()
                         self.start_time += pygame.time.get_ticks() - self.pause_start
@@ -231,8 +229,6 @@ class Game:
                     sys.exit()
 
                 if event.type == pygame.KEYDOWN:
-                    if event.key == pygame.K_TAB:
-                        change_mode()
                     if event.key == pygame.K_ESCAPE:
                         self.pause_screen()
                         self.start_time += pygame.time.get_ticks() - self.pause_start
@@ -310,8 +306,6 @@ class Game:
                     sys.exit()
 
                 if event.type == pygame.KEYDOWN:
-                    if event.key == pygame.K_TAB:
-                        change_mode()
                     if event.key == pygame.K_ESCAPE:
                         self.pause_screen()
                         self.start_time += pygame.time.get_ticks() - self.pause_start
