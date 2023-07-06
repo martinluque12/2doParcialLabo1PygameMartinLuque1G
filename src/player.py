@@ -446,10 +446,6 @@ class Player:
             window (pygame.Surface): Es la ventana principal del juego.
         """
         if isinstance(window, pygame.Surface) and window:
-            if get_mode():
-                pygame.draw.rect(window, BLUE, self.rect_collision_feet)
-                pygame.draw.rect(window, GREEN, self.rect_collision_body)
-
             self.image = self.animation[self.frame]
 
             if self.falling:
