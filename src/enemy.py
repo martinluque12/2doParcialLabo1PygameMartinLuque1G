@@ -305,12 +305,6 @@ class Enemy:
             window (pygame.Surface): Es la ventana principal del juego.
         """
         if isinstance(window, pygame.Surface) and window:
-            if get_mode():
-                pygame.draw.rect(window, BLACK, self.rect_collision_head)
-                pygame.draw.rect(window, BLUE, self.rect_collision_body)
-                pygame.draw.rect(window, GREEN, self.rect_collision_feet)
-                
-            
             if self.frame >= len(self.animation):
                 self.frame = 0
             self.image = self.animation[self.frame]
