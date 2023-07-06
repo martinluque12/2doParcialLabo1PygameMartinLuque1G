@@ -1,0 +1,770 @@
+{
+    "players": [ 
+        {
+            "animations": {
+                "still_r": {
+                    "path": "Personaje/Virtual Guy/Idle (32x32).png",
+                    "columns": 11
+                },
+                "still_l": {
+                    "path": "Personaje/Virtual Guy/Idle (32x32).png",
+                    "columns": 11
+                },
+                "walking_r": {
+                    "path": "Personaje/Virtual Guy/Run (32x32).png",
+                    "columns": 12
+                },
+                "walking_l": {
+                    "path": "Personaje/Virtual Guy/Run (32x32).png",
+                    "columns": 12
+                },
+                "jumping_r": {
+                    "path": "Personaje/Virtual Guy/Jump (32x32).png",
+                    "columns": 1
+                },
+                "jumping_l": {
+                    "path": "Personaje/Virtual Guy/Jump (32x32).png",
+                    "columns": 1
+                }
+            },
+            "pos_x": 10,
+            "pos_y": 561
+        }
+    ],
+    "enemies": [
+        
+        {
+            "animations": {
+                "still_r": {
+                    "path": "Varios/Cositas/Enemies/AngryPig/Idle (36x30).png",
+                    "columns": 9
+                },
+                "still_l": {
+                    "path": "Varios/Cositas/Enemies/AngryPig/Idle (36x30).png",
+                    "columns": 9
+                },
+                "walking_r": {
+                    "path": "Varios/Cositas/Enemies/AngryPig/Walk (36x30).png",
+                    "columns": 16
+                },
+                "walking_l": {
+                    "path": "Varios/Cositas/Enemies/AngryPig/Walk (36x30).png",
+                    "columns": 16
+                },
+                "running_r": {
+                    "path": "Varios/Cositas/Enemies/AngryPig/Run (36x30).png",
+                    "columns": 12
+                },
+                "running_l": {
+                    "path": "Varios/Cositas/Enemies/AngryPig/Run (36x30).png",
+                    "columns": 12
+                }
+            },
+            "pos_x": 500,
+            "pos_y": 80,
+            "right_limit": 640,
+            "left_limit": 290   
+        },
+        {
+            "animations": {
+                "still_r": {
+                    "path": "Varios/Cositas/Enemies/Rino/Idle (52x34).png",
+                    "columns": 11
+                },
+                "still_l": {
+                    "path": "Varios/Cositas/Enemies/Rino/Idle (52x34).png",
+                    "columns": 11
+                },
+                "walking_r": {
+                    "path": "Varios/Cositas/Enemies/Rino/Run (52x34).png",
+                    "columns": 6
+                },
+                "walking_l": {
+                    "path": "Varios/Cositas/Enemies/Rino/Run (52x34).png",
+                    "columns": 6
+                },
+                "running_r": {
+                    "path": "Varios/Cositas/Enemies/Rino/Run (52x34).png",
+                    "columns": 6
+                },
+                "running_l": {
+                    "path": "Varios/Cositas/Enemies/Rino/Run (52x34).png",
+                    "columns": 6
+                }
+            },
+            "pos_x": 800,
+            "pos_y": 560,
+            "right_limit": 1100,
+            "left_limit": 100
+        },
+        {
+            "animations": {
+                "still_r": {
+                    "path": "Varios/Cositas/Enemies/Mushroom/Idle (32x32).png",
+                    "columns": 14
+                },
+                "still_l": {
+                    "path": "Varios/Cositas/Enemies/Mushroom/Idle (32x32).png",
+                    "columns": 14
+                },
+                "walking_r": {
+                    "path": "Varios/Cositas/Enemies/Mushroom/Run (32x32).png",
+                    "columns": 16
+                },
+                "walking_l": {
+                    "path": "Varios/Cositas/Enemies/Mushroom/Run (32x32).png",
+                    "columns": 16
+                },
+                "running_r": {
+                    "path": "Varios/Cositas/Enemies/Mushroom/Run (32x32).png",
+                    "columns": 16
+                },
+                "running_l": {
+                    "path": "Varios/Cositas/Enemies/Mushroom/Run (32x32).png",
+                    "columns": 16
+                }
+            },
+            "pos_x": 350,
+            "pos_y": 150,
+            "right_limit": 445,
+            "left_limit": 140
+        },
+        {
+            "animations": {
+                "still_r": {
+                    "path": "Varios/Cositas/Enemies/Chicken/Idle (32x34).png",
+                    "columns": 13
+                },
+                "still_l": {
+                    "path": "Varios/Cositas/Enemies/Chicken/Idle (32x34).png",
+                    "columns": 13
+                },
+                "walking_r": {
+                    "path": "Varios/Cositas/Enemies/Chicken/Run (32x34).png",
+                    "columns": 14
+                },
+                "walking_l": {
+                    "path": "Varios/Cositas/Enemies/Chicken/Run (32x34).png",
+                    "columns": 14
+                },
+                "running_r": {
+                    "path": "Varios/Cositas/Enemies/Chicken/Run (32x34).png",
+                    "columns": 14
+                },
+                "running_l": {
+                    "path": "Varios/Cositas/Enemies/Chicken/Run (32x34).png",
+                    "columns": 14
+                }
+            },
+            "pos_x": 620,
+            "pos_y": 390,
+            "right_limit": 700,
+            "left_limit": 385
+        }
+    ],
+    "platforms": [
+        {
+            "pos_x": 1,
+            "pos_y": 465,
+            "width": 50,
+            "height": 50,
+            "type": 53,
+            "collided": true
+        },
+        {
+            "pos_x": 50,
+            "pos_y": 465,
+            "width": 50,
+            "height": 50,
+            "type": 53,
+            "collided": true
+        },
+        {
+            "pos_x": 100,
+            "pos_y": 465,
+            "width": 50,
+            "height": 50,
+            "type": 53,
+            "collided": true
+        },
+        {
+            "pos_x": 150,
+            "pos_y": 465,
+            "width": 50,
+            "height": 50,
+            "type": 53,
+            "collided": true
+        },
+        {
+            "pos_x": 200,
+            "pos_y": 465,
+            "width": 50,
+            "height": 50,
+            "type": 53,
+            "collided": true
+        },
+        {
+            "pos_x": 250,
+            "pos_y": 465,
+            "width": 50,
+            "height": 50,
+            "type": 53,
+            "collided": true
+        },
+        {
+            "pos_x": 400,
+            "pos_y": 465,
+            "width": 50,
+            "height": 50,
+            "type": 53,
+            "collided": true
+        },
+        {
+            "pos_x": 450,
+            "pos_y": 465,
+            "width": 50,
+            "height": 50,
+            "type": 53,
+            "collided": true
+        },
+        {
+            "pos_x": 500,
+            "pos_y": 465,
+            "width": 50,
+            "height": 50,
+            "type": 53,
+            "collided": true
+        },
+        {
+            "pos_x": 550,
+            "pos_y": 465,
+            "width": 50,
+            "height": 50,
+            "type": 53,
+            "collided": true
+        },
+        {
+            "pos_x": 600,
+            "pos_y": 465,
+            "width": 50,
+            "height": 50,
+            "type": 53,
+            "collided": true
+        },
+        {
+            "pos_x": 650,
+            "pos_y": 465,
+            "width": 50,
+            "height": 50,
+            "type": 53,
+            "collided": true
+        },
+        {
+            "pos_x": 700,
+            "pos_y": 465,
+            "width": 50,
+            "height": 50,
+            "type": 53,
+            "collided": true
+        },
+        {
+            "pos_x": 850,
+            "pos_y": 465,
+            "width": 50,
+            "height": 50,
+            "type": 53,
+            "collided": true
+        },
+        {
+            "pos_x": 900,
+            "pos_y": 465,
+            "width": 50,
+            "height": 50,
+            "type": 53,
+            "collided": true
+        },
+        {
+            "pos_x": 950,
+            "pos_y": 465,
+            "width": 50,
+            "height": 50,
+            "type": 53,
+            "collided": true
+        },
+        {
+            "pos_x": 1000,
+            "pos_y": 465,
+            "width": 50,
+            "height": 50,
+            "type": 53,
+            "collided": true
+        },
+        {
+            "pos_x": 1140,
+            "pos_y": 510,
+            "width": 60,
+            "height": 50,
+            "type": 53,
+            "collided": true
+        },
+        {
+            "pos_x": 1150,
+            "pos_y": 300,
+            "width": 50,
+            "height": 50,
+            "type": 53,
+            "collided": true
+        },
+        {
+            "pos_x": 1100,
+            "pos_y": 300,
+            "width": 50,
+            "height": 50,
+            "type": 53,
+            "collided": true
+        },
+        {
+            "pos_x": 1050,
+            "pos_y": 300,
+            "width": 50,
+            "height": 50,
+            "type": 53,
+            "collided": true
+        },
+        {
+            "pos_x": 1000,
+            "pos_y": 300,
+            "width": 50,
+            "height": 50,
+            "type": 53,
+            "collided": true
+        },
+        {
+            "pos_x": 850,
+            "pos_y": 300,
+            "width": 50,
+            "height": 50,
+            "type": 53,
+            "collided": true
+        },
+        {
+            "pos_x": 800,
+            "pos_y": 300,
+            "width": 50,
+            "height": 50,
+            "type": 53,
+            "collided": true
+        },
+        {
+            "pos_x": 750,
+            "pos_y": 300,
+            "width": 50,
+            "height": 50,
+            "type": 53,
+            "collided": true
+        },
+        {
+            "pos_x": 700,
+            "pos_y": 300,
+            "width": 50,
+            "height": 50,
+            "type": 53,
+            "collided": true
+        },
+        {
+            "pos_x": 650,
+            "pos_y": 300,
+            "width": 50,
+            "height": 50,
+            "type": 53,
+            "collided": true
+        },
+        {
+            "pos_x": 600,
+            "pos_y": 300,
+            "width": 50,
+            "height": 50,
+            "type": 53,
+            "collided": true
+        },
+        {
+            "pos_x": 450,
+            "pos_y": 300,
+            "width": 50,
+            "height": 50,
+            "type": 53,
+            "collided": true
+        },
+        {
+            "pos_x": 400,
+            "pos_y": 300,
+            "width": 50,
+            "height": 50,
+            "type": 53,
+            "collided": true
+        },
+        {
+            "pos_x": 350,
+            "pos_y": 300,
+            "width": 50,
+            "height": 50,
+            "type": 53,
+            "collided": true
+        },
+        {
+            "pos_x": 300,
+            "pos_y": 300,
+            "width": 50,
+            "height": 50,
+            "type": 53,
+            "collided": true
+        },
+        {
+            "pos_x": 250,
+            "pos_y": 300,
+            "width": 50,
+            "height": 50,
+            "type": 53,
+            "collided": true
+        },
+        {
+            "pos_x": 200,
+            "pos_y": 300,
+            "width": 50,
+            "height": 50,
+            "type": 53,
+            "collided": true
+        },
+        {
+            "pos_x": 150,
+            "pos_y": 300,
+            "width": 50,
+            "height": 50,
+            "type": 53,
+            "collided": true
+        },
+        {
+            "pos_x": 1,
+            "pos_y": 345,
+            "width": 60,
+            "height": 50,
+            "type": 53,
+            "collided": true
+        },
+        {
+            "pos_x": 1,
+            "pos_y": 135,
+            "width": 50,
+            "height": 50,
+            "type": 53,
+            "collided": true
+        },
+        {
+            "pos_x": 50,
+            "pos_y": 135,
+            "width": 50,
+            "height": 50,
+            "type": 53,
+            "collided": true
+        },
+        {
+            "pos_x": 100,
+            "pos_y": 135,
+            "width": 50,
+            "height": 50,
+            "type": 53,
+            "collided": true
+        },
+        {
+            "pos_x": 150,
+            "pos_y": 135,
+            "width": 50,
+            "height": 50,
+            "type": 53,
+            "collided": true
+        },
+        {
+            "pos_x": 300,
+            "pos_y": 135,
+            "width": 50,
+            "height": 50,
+            "type": 53,
+            "collided": true
+        },
+        {
+            "pos_x": 350,
+            "pos_y": 135,
+            "width": 50,
+            "height": 50,
+            "type": 53,
+            "collided": true
+        },
+        {
+            "pos_x": 400,
+            "pos_y": 135,
+            "width": 50,
+            "height": 50,
+            "type": 53,
+            "collided": true
+        },
+        {
+            "pos_x": 450,
+            "pos_y": 135,
+            "width": 50,
+            "height": 50,
+            "type": 53,
+            "collided": true
+        },
+        {
+            "pos_x": 500,
+            "pos_y": 135,
+            "width": 50,
+            "height": 50,
+            "type": 53,
+            "collided": true
+        },
+        {
+            "pos_x": 550,
+            "pos_y": 135,
+            "width": 50,
+            "height": 50,
+            "type": 53,
+            "collided": true
+        },
+        {
+            "pos_x": 600,
+            "pos_y": 135,
+            "width": 50,
+            "height": 50,
+            "type": 53,
+            "collided": true
+        },
+        {
+            "pos_x": 650,
+            "pos_y": 135,
+            "width": 50,
+            "height": 50,
+            "type": 53,
+            "collided": true
+        },
+        {
+            "pos_x": 800,
+            "pos_y": 135,
+            "width": 50,
+            "height": 50,
+            "type": 53,
+            "collided": true
+        },
+        {
+            "pos_x": 850,
+            "pos_y": 135,
+            "width": 50,
+            "height": 50,
+            "type": 53,
+            "collided": true
+        },
+        {
+            "pos_x": 900,
+            "pos_y": 135,
+            "width": 50,
+            "height": 50,
+            "type": 53,
+            "collided": true
+        },
+        {
+            "pos_x": 950,
+            "pos_y": 135,
+            "width": 50,
+            "height": 50,
+            "type": 53,
+            "collided": true
+        },
+        {
+            "pos_x": 1000,
+            "pos_y": 135,
+            "width": 50,
+            "height": 50,
+            "type": 53,
+            "collided": true
+        },
+        {
+            "pos_x": 1150,
+            "pos_y": 180,
+            "width": 50,
+            "height": 50,
+            "type": 53,
+            "collided": true
+        }
+    ],
+    "collectibles": [
+        {
+            "pos_x": 1125,
+            "pos_y": 85,
+            "path": "Varios/Cositas/Items/Fruits/Pineapple.png",
+            "type": "special",
+            "scale": 3
+        },
+        {
+            "pos_x": -20,
+            "pos_y": 250,
+            "path": "Varios/Cositas/Items/Fruits/Pineapple.png",
+            "type": "special",
+            "scale": 3
+        },
+        {
+            "pos_x": -10,
+            "pos_y": 405,
+            "path": "Varios/Cositas/Items/Fruits/Apple.png",
+            "type": "normal",
+            "scale": 2
+        },
+        {
+            "pos_x": 500,
+            "pos_y": 300,
+            "path": "Varios/Cositas/Items/Fruits/Apple.png",
+            "type": "normal",
+            "scale": 2
+        },
+        {
+            "pos_x": 540,
+            "pos_y": 300,
+            "path": "Varios/Cositas/Items/Fruits/Apple.png",
+            "type": "normal",
+            "scale": 2
+        },
+        {
+            "pos_x": 520,
+            "pos_y": 260,
+            "path": "Varios/Cositas/Items/Fruits/Apple.png",
+            "type": "normal",
+            "scale": 2
+        },
+        {
+            "pos_x": 750,
+            "pos_y": 410,
+            "path": "Varios/Cositas/Items/Fruits/Apple.png",
+            "type": "normal",
+            "scale": 2
+        },
+        {
+            "pos_x": 790,
+            "pos_y": 410,
+            "path": "Varios/Cositas/Items/Fruits/Apple.png",
+            "type": "normal",
+            "scale": 2
+        },
+        {
+            "pos_x": 770,
+            "pos_y": 370,
+            "path": "Varios/Cositas/Items/Fruits/Apple.png",
+            "type": "normal",
+            "scale": 2
+        },
+        {
+            "pos_x": 1100,
+            "pos_y": 570,
+            "path": "Varios/Cositas/Items/Fruits/Apple.png",
+            "type": "normal",
+            "scale": 2
+        },
+        {
+            "pos_x": 1140,
+            "pos_y": 570,
+            "path": "Varios/Cositas/Items/Fruits/Apple.png",
+            "type": "normal",
+            "scale": 2
+        },
+        {
+            "pos_x": 10,
+            "pos_y": 80,
+            "path": "Varios/Cositas/Items/Fruits/Apple.png",
+            "type": "normal",
+            "scale": 2
+        },
+        {
+            "pos_x": 50,
+            "pos_y": 80,
+            "path": "Varios/Cositas/Items/Fruits/Apple.png",
+            "type": "normal",
+            "scale": 2
+        },
+        {
+            "pos_x": 30,
+            "pos_y": 40,
+            "path": "Varios/Cositas/Items/Fruits/Apple.png",
+            "type": "normal",
+            "scale": 2
+        },
+        {
+            "pos_x": 697,
+            "pos_y": 120,
+            "path": "Varios/Cositas/Items/Fruits/Apple.png",
+            "type": "normal",
+            "scale": 2
+        },
+        {
+            "pos_x": 737,
+            "pos_y": 120,
+            "path": "Varios/Cositas/Items/Fruits/Apple.png",
+            "type": "normal",
+            "scale": 2
+        },
+        {
+            "pos_x": 717,
+            "pos_y": 80,
+            "path": "Varios/Cositas/Items/Fruits/Apple.png",
+            "type": "normal",
+            "scale": 2
+        },
+        {
+            "pos_x": 1140,
+            "pos_y": 240,
+            "path": "Varios/Cositas/Items/Fruits/Apple.png",
+            "type": "normal",
+            "scale": 2
+        },
+        {
+            "pos_x": 318,
+            "pos_y": 460,
+            "path": "Varios/Cositas/Items/Fruits/Apple.png",
+            "type": "normal",
+            "scale": 2
+        },
+        {
+            "pos_x": 220,
+            "pos_y": 130,
+            "path": "Varios/Cositas/Items/Fruits/Apple.png",
+            "type": "normal",
+            "scale": 2
+        }
+        ],
+        "traps": [
+            {
+                "animations": {
+                    "path": "Varios/Cositas/Traps/Saw/On (38x38).png",
+                    "columns": 8
+                },
+                "pos_x" : 220,
+                "pos_y" : 275,
+                "scale": 1.5
+            },
+            {
+                "animations": {
+                    "path": "Varios/Cositas/Traps/Saw/On (38x38).png",
+                    "columns": 8
+                },
+                "pos_x" : 525,
+                "pos_y" : 439,
+                "scale": 1.5
+            },
+            {
+                "animations": {
+                    "path": "Varios/Cositas/Traps/Saw/On (38x38).png",
+                    "columns": 8
+                },
+                "pos_x" : 720,
+                "pos_y" : 275,
+                "scale": 1.5
+            }
+        ]
+}
