@@ -12,6 +12,6 @@
 
 ## Redes:
 
-Email: martin.luque1995@hotmail.com
-Linkedin: [Martin Ezequiel Luque]([URL_del_perfil_de_LinkedIn](https://www.linkedin.com/in/martineluque/)https://www.linkedin.com/in/martineluque/)
+>Email: martin.luque1995@hotmail.com
+>Linkedin: [**Martin Ezequiel Luque**]([URL_del_perfil_de_LinkedIn](https://www.linkedin.com/in/martineluque/)https://www.linkedin.com/in/martineluque/)
 
