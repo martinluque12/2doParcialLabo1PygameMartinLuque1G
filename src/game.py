@@ -347,7 +347,7 @@ class Game:
 
                 self.score_level_3 = player.score
                 
-                if player.lives == 0 and player.rect.y > HEIGHT:
+                if player.lives == 0:
                     self.game_over_screen()
 
             score_text = f"Score: {self.score_level_3+self.score_level_2+self.score_level_1}"
@@ -521,25 +521,24 @@ class Game:
             self.render(self.play_again_buttons, background)
             
 
-    def upload_json(self, username:str, game_time:int, score:int) -> None:
+    def upload_json(self, username: str, game_time: int, score: int) -> None:
         """
-        Función para subir la información del ranking a un json, crea un diccionario con los datos, verifica si existe
+        Función para subir la información del ranking a un json, crea una lista de diccionarios con los datos, verifica si existe
         el archivo json, si no existe crea una lista vacía y agrega los datos a la lista, luego los ordena primero por
-        score de forma descendente y luego por tiempo de forma ascendente luego reescribe el archivo json con los datos
+        score de forma descendente y luego por tiempo de forma ascendente y reescribe el archivo json con los datos
         ordenados.
 
         Args:
             username (str): Nombre que ingresa el usuario.
-            game_time (int): Tiempo que tardo el usuario en completar el nivel.
+            game_time (str): Tiempo que tardó el usuario en completar el nivel.
             score (int): Puntos totales que hizo el usuario durante el juego.
         """
-        if(isinstance(username, str) and username and isinstance(game_time, int) and game_time and
-           isinstance(score, int) and score):
-            
+        if(isinstance(username, str) and username and isinstance(game_time, int) and game_time 
+           and isinstance(score, int) and score):
             username = username.strip()
-            
-            minutes = game_time // 60
-            seconds = game_time % 60
+
+            minutes = int(game_time) // 60
+            seconds = int(game_time) % 60
             game_time_str = f"{minutes:02d}:{seconds:02d}"
 
             data = {
@@ -550,7 +549,7 @@ class Game:
 
             if os.path.exists("ranking.json"):
                 with open("ranking.json", "r") as file:
-                    ranking = [json.loads(line) for line in file]
+                    ranking = json.load(file)
             else:
                 ranking = []
 
@@ -558,10 +557,8 @@ class Game:
 
             ranking = sorted(ranking, key=lambda x: (-x["Score"], x["Game_time"]))
 
-            with open("ranking.json", "w") as file:
-                for record in ranking:
-                    json.dump(record, file)
-                    file.write("\n")
+            with open("ranking.json", "w", encoding="utf-8") as file:
+                json.dump(ranking, file, indent=2, ensure_ascii=False)
 
 
     def render(self, buttons:list, background:pygame.Surface) -> None:
