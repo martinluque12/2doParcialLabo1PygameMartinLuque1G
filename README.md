@@ -14,5 +14,5 @@
 
 >Email: martin.luque1995@hotmail.com
 >
->Linkedin: [**Martin Ezequiel Luque**]([https://www.linkedin.com/in/martineluque/)
+>Linkedin: [**Martin Ezequiel Luque**](https://www.linkedin.com/in/martineluque)
 
