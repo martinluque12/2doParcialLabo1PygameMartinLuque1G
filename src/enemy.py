@@ -173,7 +173,7 @@ class Enemy:
         self.was_hit = False
             
         
-    def collided_player(self, player, delta_ms:int, platform_list:list) -> None:
+    def collided_player(self, player, delta_ms:int) -> None:
         """
         Método que verifica si el player colisiono con el rectángulo de la cabeza el enemigo, si colisiono
         reproduce el sonido de muerte del enemigo y hace que el enemigo caiga fuera de la pantalla. 
@@ -182,7 +182,7 @@ class Enemy:
             player (Player): Es una instancia de la clase Player.
             delta_ms (int): Variable que hace referencia al tiempo transcurrido desde que se actualizo la pantalla.
         """
-        if player and isinstance(delta_ms, int) and delta_ms and isinstance(platform_list, list) and platform_list:
+        if player and isinstance(delta_ms, int) and delta_ms:
             if player.rect_collision_feet.colliderect(self.rect_collision_head) and not self.was_hit and not player.falling:
                 self.was_hit = True
                 self.sound_death.play()
@@ -194,6 +194,17 @@ class Enemy:
                     if self.elapsed_time_of_death > 5000:
                         self.respawn()
                         self.elapsed_time_of_death = 0
+
+    
+    def collided_platform(self, platform_list:list) -> None:
+        """
+        Verifica si el enemigo ha colisionado con alguna plataforma. Si el enemigo está cayendo y colisiona con una plataforma,
+        se detiene la caída. Si el enemigo no colisiona con ninguna plataforma, continúa cayendo.
+
+        Args:
+            platform_list (list): Lista de plataformas
+        """
+        if isinstance(platform_list, list) and platform_list:
             if self.is_falling:
                 self.add_y(self.gravity)
                 self.animation = self.still_l
@@ -282,7 +293,8 @@ class Enemy:
         if isinstance(delta_ms, int) and delta_ms and isinstance(platform_list, list) and platform_list and  player:
             self.do_movement(delta_ms, player)
             self.do_animation(delta_ms)
-            self.collided_player(player, delta_ms, platform_list)
+            self.collided_player(player, delta_ms)
+            self.collided_platform(platform_list)
 
             
     def draw(self, window:pygame.Surface) -> None:
@@ -292,7 +304,13 @@ class Enemy:
         Args:
             window (pygame.Surface): Es la ventana principal del juego.
         """
-        if isinstance(window, pygame.Surface) and window:    
+        if isinstance(window, pygame.Surface) and window:
+            if get_mode():
+                pygame.draw.rect(window, BLACK, self.rect_collision_head)
+                pygame.draw.rect(window, BLUE, self.rect_collision_body)
+                pygame.draw.rect(window, GREEN, self.rect_collision_feet)
+                
+            
             if self.frame >= len(self.animation):
                 self.frame = 0
             self.image = self.animation[self.frame]
